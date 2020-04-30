@@ -1,0 +1,63 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                       dog 
+ 2 key:                     Dog_02.jpg  label:                       dog 
+ 3 key:              Basketball_01.jpg  label:                basketball 
+ 4 key:              Coffee_mug_01.jpg  label:                coffee mug 
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                       dog    Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+             Basketball_01.jpg: 
+Real:                basketball    Classifier:                     basketball
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                       dog    Classifier:            rhodesian ridgeback
+
+             Coffee_mug_01.jpg: 
+Real:                coffee mug    Classifier:                            cup
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                       dog    Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Basketball_01.jpg: 
+Real:                basketball    Classifier:                     basketball  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                       dog    Classifier:            rhodesian ridgeback  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Coffee_mug_01.jpg: 
+Real:                coffee mug    Classifier:                            cup  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+results stats dic: {'n_images': 4, 'n_dogs_img': 2, 'n_notdogs_img': 2, 'n_correct_dog': 2, 'n_correct_non_dog': 2, 'n_correct_breed_matches': 1, 'n_label_matches': 2, 'pct_correct_dogs': 100.0, 'pct_correct_notdogs': 100.0, 'pct_correct_breed': 50.0, 'pct_label_matches': 50.0}
+The CNN was used to test the model: alexnet!
+
+** Total Elapsed Runtime: 0:0:0
